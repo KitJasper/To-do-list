@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/cf223ee5eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="style.css" rel="stylesheet" />
+    <title>To do list</title>
+  </head>
+  <body class="bg-gray-200 p-10 flex justify-center">
+    <div class="container h-100 flex items-center justify-evenly">
+      <div class="wrapper bg-white grid rounded-md">
+        <div class="title mb-5 font-extrabold">
+          <i class="fa-solid fa-square-check"></i> To-do-list
+        </div>
+        <div id="addform" class="flex justify-between mb-5">
+          <input
+            id="note"
+            type="text"
+            class="note rounded-md shadow-sm"
+            placeholder="Add new"
+          />
+          <button onclick="newElement()" class="add rounded" id="add">
+            Add
+          </button>
+        </div>
+        <ul id="list">
+          <li class="item flex items-center justify-between w-full">
+            <p class="">Buy Groceries</p>
+            <button id="remove" class="remove rounded">Remove</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
